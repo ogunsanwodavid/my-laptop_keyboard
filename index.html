@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ogunsanwo David">
+    <meta name="description" content="My laptop keyboard with only HTML and CSS">
+    <meta name="keywords" content="Laptop ,Keyboard, CSS, onlyCSS, HTML , David, MTG, Ogunsanwo">
+    <title>MY LAPTOP KEYBOARD</title>
+    <link rel="stylesheet" href="keyboard.css">
+</head>
+<body>
+    <!--This section is the inner that contains the whole keyboard frame and it is centred horizontally and marginalized vetically-->
+        <div class="inner">
+            <!--This is the where the power button is shown to the extreme right has the div class "main-power-btn"-->
+            <div class="power">
+               <!-- <div class="power-left power-left-1"></div>
+                <div class="power-left power-left-2"></div>
+                <div class="power-left power-left-3"></div>-->
+                <div class="main-power-btn">
+                    <div class="inner-power"></div>
+                </div>
+            </div>
+            <!--This is the section for all the keys on the keyboard-->
+            <div class="keypad">
+                <!--This is the first row of keys
+                -Notice that we the 
+                -Escape key
+                -Function keys
+                - and Home, End , Insert , Delete keys.
+                -->
+                <div class="first-row">
+                    <div class="esc"><span>Esc</span></div>
+                    <div class="function-key function-key-1"><span>F1</span></div>
+                    <div class="function-key function-key-2"><span>F2</span></div>
+                    <div class="function-key function-key-3"><span>F3</span></div>
+                    <div class="function-key function-key-4"><span>F4</span></div>
+                    <div class="function-key function-key-5"><span>F5</span></div>
+                    <div class="function-key function-key-6"><span>F6</span></div>
+                    <div class="function-key function-key-7"><span>F7</span></div>
+                    <div class="function-key function-key-8"><span>F8</span></div>
+                    <div class="function-key function-key-9"><span>F9</span></div>
+                    <div class="function-key function-key-10"><span>F10</span></div>
+                    <div class="function-key function-key-11"><span>F11</span></div>
+                    <div class="function-key function-key-12"><span>F12</span></div>
+                    <div class="home"><span>Home</span></div>
+                    <div class="end"><span>End</span></div>
+                    <div class="insert"><span>Insert</span></div>
+                    <div class="delete"><span>Delete</span></div>
+                </div>
+                <!--This is the second row of keys
+                -Note that; we have
+                -normal keys with the div class "secondrow-div"
+                -some of the keys have two inner span tags which represent the keys having two contents on it in rows.
+                -and the backspace key
+                -->
+                <div class="second-row">
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">~</span><span class="down">`</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">!</span><span class="down">1</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">@</span><span class="down">2</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">#</span><span class="down">3</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">$</span><span class="down">4</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">%</span><span class="down">5</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">^</span><span class="down">6</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">&</span><span class="down">7</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">*</span><span class="down">8</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">(</span><span class="down">9</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">)</span><span class="down">0</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">_</span><span class="down">-</span></div>
+                    </div>
+                    <div class="secondrow-div">
+                        <div class="inner-key"><span class="top">+</span><span class="down">=</span></div>
+                    </div>
+                    <div class="backspace"><div class="inner-key" id="">Backspace</div></div>
+                </div>
+
+                <!--This is the third row of keys and this consists of
+                -tab key
+                -custom keys which some have two contents
+                -and a bigger key for the slants.
+                -->
+                <div class="third-row">
+                    <div class="tab">
+                        <div class="inner-key" id="tab-inner-key" id="">Tabs</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">Q</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">W</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">E</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">R</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">T</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">Y</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">U</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">I</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">O</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key">P</div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">{</span><span class="down">[</span></div>
+                    </div>
+                    <div class="thirdrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">}</span><span class="down">]</span></div>
+                    </div>
+                    <div class="slants">
+                        <div class="inner-key" id="inner-type-2"><span class="top">|</span><span class="down">\</span></div>
+                    </div>
+                </div>
+                <!--This is the fourth row of keys
+                -It contains the
+                -capslock key
+                -custom keys
+                -and the Enter key
+                -->
+                <div class="fourth-row">
+                    <div class="capslock">
+                        <div class="inner-key" id="caps-inner-key">Caps Lock</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">A</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">S</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">D</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">F</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">G</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">H</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">J</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">K</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key">L</div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">:</span><span class="down">;</span></div>
+                    </div>
+                    <div class="fourthrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">"</span><span class="down">'</span></div>
+                    </div>
+                    <div class="enter">
+                        <div class="inner-key" id="enter-inner-key">Enter</div>
+                    </div>
+                </div>
+                <!--This is the fifth row of keys and it contains;
+                -The two shift keys
+                -and some custom  keys
+                -->
+                <div class="fifth-row">
+                    <div class="shift">
+                        <div class="inner-key" id="shift-inner-key">Shift</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">Z</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">X</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">C</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">V</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">B</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">N</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key">M</div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top"><</span><span class="down">,</span></div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">></span><span class="down">.</span></div>
+                    </div>
+                    <div class="fifthrow-div">
+                        <div class="inner-key" id="inner-type-2"><span class="top">?</span><span class="down">/</span></div>
+                    </div>
+                    <div class="shift">
+                        <div class="inner-key" id="shift-inner-key">Shift</div>
+                    </div>
+                </div>
+                <!--This is the sixth row of keys and it contains;
+                -the ctrl keys
+                -some custom keys
+                -the window key
+                -the alt keys
+                - and page up / page down keys
+                -->
+                <div class="sixth-row">
+                    <div class="ctrl-1">
+                        <div class="inner-key ">Ctrl</div>
+                    </div>
+                    <div class="sixthrow-div">
+                        <div class="inner-key" id="red-inner-key">Fn</div>
+                    </div>
+                    <div class="sixthrow-div">
+                        <div class="inner-key">
+                            <img src="https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whitewindowsicon.jpg?raw=true" alt="">
+                        </div>
+                    </div>
+                    <div class="alt-1">
+                        <div class="inner-key">Alt</div>
+                    </div>
+                    <div class="space">
+                        <div class="inner-key "></div>
+                    </div>
+                    <div class="sixthrow-div">
+                        <div class="inner-key"></div>
+                    </div>
+                    <div class="crtl-2">
+                        <div class="inner-key"></div>
+                    </div>
+                    <div class="sixthrow-div" id="page-up">
+                        <div class="inner-key">Page <br>Up</div>
+                    </div>
+                    <div class="sixthrow-div arrow-key" id="arrow-up">
+                        <div class="inner-key"><img src="https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whiteuparrowicon.png?raw=true" alt=""></div>
+                    </div>
+                    <div class="sixthrow-div" id="page-down">
+                        <div class="inner-key">Page <br>Down</div>
+                    </div>
+                </div>
+                <!--This seventh row is quite different because:
+                -it is divided into three columns horizontally
+                -The first being the "seventh-left" has some specifications for the keyboard
+                -The second being the "seventh-mid" has the two clicking pads at the centre of the keypad
+                -The third being the "seventh-right" has three arrow keys which are the extreme right of the keypad
+                -->
+                <div class="seventh-row">
+                    <div class="seventh-left">
+                        <div class="inner-sev-left">
+                            <span>LATITUDE</span><span>E64430</span>
+                        </div>
+                    </div>
+                    <div class="seventh-mid">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="seventh-right">
+                        <div class="arrow-key" id="arrow-left">
+                            <div class="inner-key"><img src="https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whiteleftarrowicon.png?raw=true" alt=""></div>
+                        </div>
+                        <div class="arrow-key" id="arrow-down">
+                            <div class="inner-key"><img src="https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whitedownarrowicon.png?raw=true" alt=""></div>
+                        </div>
+                        <div class="arrow-key" id="arrow-right">
+                            <div class="inner-key"><img src="https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whiterightarrowicon.png?raw=true" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--This is the section that contains the trackpad
+            -The  trackpad is divided into the 
+            -T he toucpad
+            -and two clickpads.
+            -->
+            <div class="trackpad">
+                <div class="inner-trackpad">
+                    <div class="touchpad"></div>
+                    <div class="click-pad left-click-pad"></div>
+                    <div class="click-pad right-click-pad"></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

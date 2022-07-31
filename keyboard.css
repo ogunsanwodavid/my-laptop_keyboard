@@ -1,0 +1,539 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.inner{
+    position: relative;
+    margin: 4rem auto;
+    height: max-content;
+    width: max-content;
+    border: 1px solid gray;
+    border-top: 3px solid gray;
+    background-color: rgba(0 , 0 , 0 );
+    padding: 2rem 3rem 2rem 3rem;
+    display:flex;
+    flex-direction: column;
+}
+
+
+.power{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 1rem 1rem 2.5rem;
+}
+
+.power-left{
+    height: 30px;
+    width:30px;
+    border: 1px solid white;
+}
+
+/*This class below is the main power button and when hovered/clicked upon; the background - image changes color to signifies it has been turned on.*/
+
+.main-power-btn{
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    float:right;
+    margin-left: auto;
+    background-color: silver;
+    display:flex;
+    justify-content: center;
+}
+
+.inner-power{
+    align-self: center;
+    height:80%;
+    width:80%;
+    background-image: url('https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/whitepowericon.png?raw=true');
+    background-size: cover;
+}
+
+.main-power-btn:hover .inner-power{
+    background-image: url('https://github.com/moonthegreat969/my-laptop_keyboard/blob/gh-pages/yellowlikepowericon.png?raw=true');
+}
+
+.keypad{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background-color: silver;
+}
+
+.keypad div{
+    background-color: rgba(0 , 0 , 0 );
+}
+
+.keypad .first-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .first-row div{
+    display:flex;
+    justify-content: center;
+    margin: 0.3rem;
+    border-radius: 3px;
+}
+
+.keypad .first-row div span{
+    height: 80%;
+    width: 80%;
+    border: 1px solid white;
+    align-self:center;
+    padding: 0.3rem;
+    color:white;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 0.7rem;
+}
+
+.function-key , .home , .end , .insert{
+    width:50px;
+    height:40px;
+    border: 1px solid white;
+}
+
+.esc , .delete{
+    width: 60px;
+    height: 40px;
+    border: 1px solid white;
+}
+
+.keypad .second-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .second-row .secondrow-div , .keypad .second-row .backspace{
+    margin: 0 0.3rem;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.second-row .secondrow-div {
+    width: 59.23px;
+    height: 60px;
+}
+.second-row .backspace{
+    height: 60px;
+    width: 130px;
+}
+
+.secondrow-div .inner-key , .backspace .inner-key{
+    align-self: center;
+    width: 80%;
+    height:80%;
+    border: 1px solid white;
+    color:white;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 0.7rem;
+    display:flex;
+    flex-direction: column;
+}
+.backspace .inner-key{
+    width:90%;
+}
+
+.inner-key span.top {
+    width:100%;
+    height:50%;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.7rem;
+}
+
+.inner-key span.down {
+    width:100%;
+    height:50%;
+    padding: 0.1rem 0.3rem;
+    font-size: 0.7rem;
+}
+.second-row .backspace .inner-key{
+    padding: 0.3rem;
+}
+
+.keypad .third-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .third-row .thirdrow-div , .keypad .third-row .tab , .keypad .third-row .slants{
+    margin: 0.3rem;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.third-row .thirdrow-div {
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 59.23px;
+    height: 60px;
+}
+.third-row .tab , .third-row .slants{
+    height: 60px;
+    flex-grow:1;
+}
+
+.third-row div .inner-key{
+    align-self: center;
+    width: 80%;
+    height:80%;
+    border: 1px solid white;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#tab-inner-key{
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    width:90%;
+}
+
+#inner-type-2{
+    padding:0;
+}
+
+.keypad .fourth-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .fourth-row .fourthrow-div , .keypad .fourth-row .capslock , .keypad .fourth-row .enter{
+    margin: 0.3rem;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.fourth-row div{
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 59.23px;
+    height: 60px;
+}
+.fourth-row .capslock , .fourth-row .enter{
+    height: 60px;
+    flex-grow:1;
+}
+
+.fourth-row div .inner-key{
+    align-self: center;
+    width: 80%;
+    height:80%;
+    border: 1px solid white;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#caps-inner-key , #enter-inner-key{
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    width:90%;
+}
+
+
+.keypad .fifth-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .fifth-row .fifthrow-div , .keypad .fifth-row .shift{
+    margin: 0.3rem;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.fifth-row div{
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 59.23px;
+    height: 60px;
+}
+.fifth-row .shift{
+    height: 60px;
+    flex-grow:1;
+}
+
+.fifth-row div .inner-key{
+    align-self: center;
+    width: 80%;
+    height:80%;
+    border: 1px solid white;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+#shift-inner-key{
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    width:90%;
+}
+
+.keypad .sixth-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.keypad .sixth-row .sixthrow-div , .keypad .sixth-row .ctrl-1 , .keypad .sixth-row .alt-1 , .keypad .sixth-row .space , .keypad .sixth-row .crtl-2 , .keypad .sixth-row .arrow-up {
+    margin: 0.3rem;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.sixth-row div{
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 59.23px;
+    height: 60px;
+}
+
+.sixth-row .ctrl-1{
+    height: 60px;
+    width: 90px;
+}
+
+
+.sixth-row .alt-1 , .sixth-row .crtl-2{
+    height: 60px;
+    width: 75px;
+}
+
+.sixth-row .space{
+    height: 60px;
+    flex-grow: 1;
+}
+
+.sixth-row div .inner-key{
+    align-self: center;
+    width: 80%;
+    height:80%;
+    border: 1px solid white;
+    color:white;
+    font-family:sans-serif;
+    font-weight:bold;
+    display:flex;
+    flex-direction: column;
+    font-size: 0.7rem;
+    padding: 0.3rem;
+}
+
+.sixth-row .space .inner-key{
+    width: 95%;
+}
+
+.sixthrow-div .inner-key img{
+    margin-top:25%;
+    margin-left: 15%;
+    height:50%;
+    width: 70%;
+}
+
+#page-up .inner-key , #page-down .inner-key{
+    align-self: flex-start;
+    margin-top: 0.1rem;
+}
+
+#arrow-up .inner-key{
+    align-self: flex-end;
+    margin-bottom: 0.1rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#arrow-up .inner-key img{
+    height:40%;
+    align-self: flex-end;
+}
+
+#red-inner-key{
+    color: rgb(230, 6, 6);
+}
+
+.seventh-row{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+}
+.seventh-row > div{
+    background-color: silver;
+}
+.seventh-left{
+    width: 25%;
+    flex-grow: 0;
+    height:85px;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.seventh-left .inner-sev-left{
+    align-self: flex-end;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: inherit;
+    padding: 0 1rem;
+    display:flex;
+}
+
+.inner-sev-left span:first-of-type{
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight:bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    letter-spacing: 0.2ch;
+    border-right: 1px solid gray;
+    padding-right: 0.5rem;
+}
+
+.inner-sev-left span:last-of-type{
+    align-self: center;
+    font-size: 1rem;
+    font-weight:bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    letter-spacing: 0.1ch;
+    padding-left: 0.5rem;
+}
+
+.seventh-mid{
+    flex-grow: 1;
+    height:85px;
+    display:flex;
+    justify-content: center;
+}
+
+.seventh-mid span{
+    height: 60px;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    background-color: gray;
+}
+
+.seventh-mid span:first-of-type , .seventh-mid span:last-of-type{
+    width: 130px;
+}
+
+.seventh-mid span:nth-of-type(2){
+    width: 100px;
+}
+
+.seventh-right{
+    flex-grow: 1;
+    height:85px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seventh-right .arrow-key{
+    flex-grow: 0;
+    flex-shrink: 1;
+    width: 59.23px;
+    height: 60px;
+    border: 1px solid white;
+    display:flex;
+    justify-content: center;
+    margin: 0 0.3rem;
+    border-radius: 3px;
+}
+
+.arrow-key .inner-key{
+    width:85%;
+    height:90%;
+    border: 1px solid white;
+    display:flex;
+    justify-content: flex-start;
+}
+
+.arrow-key .inner-key img{
+    height:40%;
+    align-self: flex-end;
+    margin: 0.3rem;
+}
+
+.trackpad{
+    width: 100%;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+}
+
+.inner-trackpad{
+    margin-top: 0.5rem;
+    width:360px;
+    height:260px;
+    border: 1px solid black;
+    background-color: gray;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80% 20%;
+    transform: translate(-7%);
+}
+
+.touchpad{
+    border: 1px solid black;
+    grid-column: 1/3;
+    grid-row: 1;
+    border-radius: 2px 2px 0 0 ;
+}
+
+.click-pad{
+    border: 1px solid black;
+    grid-row: 2;
+}
+
+.left-click-pad{
+    grid-column: 1;
+}
+
+.right-click-pad{
+    grid-column: 2;
+}
+
+.p:
